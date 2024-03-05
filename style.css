@@ -1,7 +1,50 @@
-body { font-family: Arial, sans-serif; }
-.tab { overflow: hidden; border: 1px solid #ccc; background-color: #f1f1f1; }
-.tab button { background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; }
-.tab button:hover { background-color: #ddd; }
-.tab button.active { background-color: #ccc; }
-.tabcontent { display: none; padding: 6px 12px; border: 1px solid #ccc; border-top: none; }
-.gimmick img { width: 100%; max-width: 400px; }
+/* 기본 바디 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* 밝은 배경색 */
+}
+
+/* 탭 버튼 스타일 */
+.tablinks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin: 2px;
+    background-color: white;
+    color: #4a5568; /* 어두운 회색 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+}
+
+/* 탭 버튼 호버 & 액티브 상태 */
+.tablinks:hover, .tablinks.active {
+    backdrop-filter: brightness(95%);
+    transform: translateY(-2px);
+}
+
+/* 탭 컨텐츠 영역 스타일 */
+.tabcontent {
+    display: none; /* 기본적으로 숨김 처리 */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+}
+
+/* 기믹 설명 이미지 스타일 */
+.gimmick img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 16px;
+    border-radius: 8px; /* 이미지에 둥근 모서리 추가 */
+}
+
+/* svg 아이콘 및 텍스트 스타일 */
+.tablinks svg {
+    margin-right: 8px;
+}
