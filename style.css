@@ -1,50 +1,48 @@
-/* 기본 바디 스타일 */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* 밝은 배경색 */
-}
-
-/* 탭 버튼 스타일 */
-.tablinks {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    margin: 2px;
-    background-color: white;
-    color: #4a5568; /* 어두운 회색 */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    font-weight: 600;
-}
-
-/* 탭 버튼 호버 & 액티브 상태 */
-.tablinks:hover, .tablinks.active {
-    backdrop-filter: brightness(95%);
-    transform: translateY(-2px);
-}
-
-/* 탭 컨텐츠 영역 스타일 */
-.tabcontent {
-    display: none; /* 기본적으로 숨김 처리 */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 16px;
-}
-
-/* 기믹 설명 이미지 스타일 */
-.gimmick img {
+/* 전체 페이지에 대한 기본 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    max-width: 400px;
-    margin-top: 16px;
-    border-radius: 8px; /* 이미지에 둥근 모서리 추가 */
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1f26;
+    color: white;
 }
 
-/* svg 아이콘 및 텍스트 스타일 */
-.tablinks svg {
-    margin-right: 8px;
+/* 컨테이너 스타일 */
+.container {
+    display: flex;
+    height: 100%;
 }
+
+/* 사이드바 스타일 */
+.sidebar {
+    min-width: 250px;
+    background-color: #2b313a;
+    padding: 20px;
+}
+
+.menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #4a90e2;
+}
+
+/* 메인 콘텐츠 영역 스타일 */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #1c1f26;
+}
+
+/* 추가적인 스타일 조정이 필요할 수 있음 */
